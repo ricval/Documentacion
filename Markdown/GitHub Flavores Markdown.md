@@ -11,6 +11,12 @@ _Pull Requests_. Estos incluyen @menciones así como referencias a _hashes_
 SHA-1, _Issues_, y _Pull Requests_. Las listas de tareas también están
 disponibles en comentarios de Gits y en archivos Gits Markdown.
 
+Puedes utilizar Markdown es mayoría de los lugares de GitHub:
+
+  - [Gits](https://gist.github.com/)
+  - Comentarios y _Issues_ y _Pull Requets_
+  - En archivos con extensión `.md` o `.markdown`
+
 
 ## Bloques de Código _Fenced_ ##
 
@@ -66,19 +72,6 @@ este [archivo YAML][].
   [Linguist]: https://github.com/github/linguist
   [archivo YAML]: https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
 
-Aquí un ejemplo de como puedes utilizar el resaltado de sintaxis con 
-[GitHub Flavored Markdown][GFM]:
-
- [GFM]: https://help.github.com/articles/github-flavored-markdown
-
-    ```javascript
-    function fancyAlert(arg)    {
-        if(arg) {
-            $.facebox({div:'#foo'})
-        }
-    }
-    ```
-
 También puedes simplemente identar tu código con cuatro espacios:
 
         function fancyAlert(arg) {
@@ -97,10 +90,10 @@ También puedes simplemente identar tu código con cuatro espacios:
 
 el resultado se vería así:
 
-- [x] Soporte de @menciones, #referencias, [links](), **formateo**, y de <del>etiquetas</del>
-- [x] lista de sintaxis requerida (cualquier lista des-ordenada y ordenada es soportada)
-- [x] esta es una tarea completa
-- [ ] esta es una tarea incompleta
+  - [x] Soporte de @menciones, #referencias, [links](), **formateo**, y de <del>etiquetas</del>
+  - [x] lista de sintaxis requerida (cualquier lista des-ordenada y ordenada es soportada)
+  - [x] esta es una tarea completa
+  - [ ] esta es una tarea incompleta
 
 
 ## Referencias SHA ##
@@ -136,6 +129,9 @@ esa persona para que venga y vea el comentario. Esto es conocido como
 
 Cualquier URL (como `http://www.github.com/`) será automáticamente convertido
 en un link navegable.
+
+como este de aquí http://www.github.com/ que fue solamente escrito entre el
+texto del párrafo.
 
 
 ## Tachado ##
