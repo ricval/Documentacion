@@ -14,8 +14,8 @@ Enlace al sitio web: [daringfireball][]
 
 Traducciones hechas por mí del sitio:
 
-  - [Lo Básico](/daringfireball/basics.text)
-  - [Sintaxis](/daringfireball/syntax.text)
+  - [Lo Básico](daringfireball/basics.text)
+  - [Sintaxis](daringfireball/syntax.text)
 
 
 
