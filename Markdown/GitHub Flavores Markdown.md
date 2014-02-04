@@ -16,7 +16,7 @@ disponibles en comentarios de Gits y en archivos Gits Markdown.
 
 El estándar Markdown convierte el texto que comienza con cuatros espacios en
 cada línea en un bloque de código; GFM también soporta bloques de código. Sólo
-encierra tu código en `` ``` `` (como se muestra enseguida) y no necesitarás
+encierra tu código en ```` ``` ```` (como se muestra enseguida) y no necesitarás
 identar con cuatro espacios tu código. Note que que los bloques de código
 _Fenced_ no tienen que estar precedidos por una línea en blanco -- a
 diferencia de los bloques de código identados -- aun así recomendamos colocar
@@ -41,13 +41,23 @@ correctamente.
 Los bloques de código pueden ir más haya agregando resaltado de sintaxis. En
 su bloque _Fenced_, agregue de forma opcional el identificador de lenguaje y
 nosotros haremos un resaltado de sintaxis apropiado. Por ejemplo, un resaltado
-de código Ruby sería así:
+de código Ruby con [GitHub Flavored Markdown][GFM] sería así:
+
+ [GFM]: https://help.github.com/articles/github-flavored-markdown
 
     ```ruby
     require 'redcarpet'
     markdown = Redcarpet.new("¡Hola Mundo!")
     puts markdown.to_html
     ```
+
+y mostraría esto:
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("¡Hola Mundo!")
+puts markdown.to_html
+```
 
 Nosotros utilizamos [Linguist][] para la detección del lenguaje y resaltado de
 la sintaxis. Puedes encontrar los diferentes nombres de lenguajes aceptados en
@@ -66,32 +76,31 @@ Aquí un ejemplo de como puedes utilizar el resaltado de sintaxis con
         if(arg) {
             $.facebox({div:'#foo'})
         }
-    ```
     }
+    ```
 
 También puedes simplemente identar tu código con cuatro espacios:
 
-    function fancyAlert(arg) {
-        if(arg) {
-            $.facebox({div:'#foo'})
+        function fancyAlert(arg) {
+            if(arg) {
+                $.facebox({div:'#foo'})
+            }
         }
-    }
-
-Aquí un ejemplo de un código en Python sin resaltado de sintaxis:
-
-    def foo:
-        if not bar:
-            return true
 
 
 ## Listas de Tareas ##
 
-    - [x] Soporte de @menciones, #referencias, [links](), **formateo**, y
-        <del>etiquetas</del>
-    - [x] lista de sintaxis requerida (cualquier lista des-ordenada y
-        ordenada es soportada)
-    - [x] este es una tarea completa
-    - [ ] este es una tarea incompleta
+    - [x] Soporte de @menciones, #referencias, [links](), **formateo**, y de <del>etiquetas</del>
+    - [x] lista de sintaxis requerida (cualquier lista des-ordenada y ordenada es soportada)
+    - [x] esta es una tarea completa
+    - [ ] esta es una tarea incompleta
+
+el resultado se vería así:
+
+- [x] Soporte de @menciones, #referencias, [links](), **formateo**, y de <del>etiquetas</del>
+- [x] lista de sintaxis requerida (cualquier lista des-ordenada y ordenada es soportada)
+- [x] esta es una tarea completa
+- [ ] esta es una tarea incompleta
 
 
 ## Referencias SHA ##
@@ -132,13 +141,24 @@ en un link navegable.
 ## Tachado ##
 
 Cualquier palabra encerrada entre dos tildes (como `~~esto~~`) aparecerá
-tachado.
+tachado; así:
+
+Quiero ~~mandar un mensaje~~ a todos.
 
 
 ## Tablas ##
 
 Puedes crear tablas de una lista de palabras dividiéndolas por guiones `-`
 (para la primera fila), y separar cada columna con un _pipe_ `|`:
+
+```
+    Primer Encabezado     | Segundo Encabezado
+    --------------------- | ---------------------
+    Contenido de la celda | Contenido de la celda
+    Contenido de la celda | Contenido de la celda
+```
+
+Resulta en esto:
 
     Primer Encabezado     | Segundo Encabezado
     --------------------- | ---------------------
