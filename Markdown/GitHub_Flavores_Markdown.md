@@ -81,7 +81,7 @@ También puedes simplemente identar tu código con cuatro espacios:
         }
 
 
-## links automáticos para URLs ##
+## Links automáticos para URLs ##
 
 Cualquier URL (como `http://www.github.com/`) será automáticamente convertido
 en un link navegable.
