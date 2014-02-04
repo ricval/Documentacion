@@ -98,6 +98,20 @@ tachado; así:
 Quiero ~~mandar un mensaje~~ a todos.
 
 
+## Citas ##
+
+Esto funciona igual que el estándar Markdown, pero para comprobar como
+se ve, aquí un ejemplo:
+
+```
+> Así es como se ve un texto citado dentro de GitHub.
+```
+
+Resultado:
+
+> Así es como se ve un texto citado dentro de GitHub.
+
+
 ## Tablas ##
 
 Puedes crear tablas de una lista de palabras dividiéndolas por guiones `-`
@@ -209,3 +223,11 @@ Escribiendo un símbolo de `@`, seguido del nombre-de-usuario, notificará a
 esa persona para que venga y vea el comentario. Esto es conocido como
 "@mención", porque tu estas mencionando a la persona. También puedes
 @mencionar equipos dentro de una organización.
+
+
+* * *
+
+__Referencias__
+
+ - [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
+ - [Mastering Markdown](http://guides.github.com/overviews/mastering-markdown/)
