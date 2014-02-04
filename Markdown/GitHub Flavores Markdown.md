@@ -5,13 +5,13 @@ GitHub.com utiliza su propia versión de sintaxis Markdown que provee un
 conjunto de características adicionales, muchas de ellas para hacer más fácil
 trabajar con el contenido en GitHub.com
 
-Note que algunas de las características de GitHub Flavored Markdown (GFM)
+Note que algunas de las características de [GitHub Flavored Markdown][GFM]
 sólo están disponibles para las descripciones y comentarios de _issues_ y
 _Pull Requests_. Estos incluyen @menciones así como referencias a _hashes_
 SHA-1, _Issues_, y _Pull Requests_. Las listas de tareas también están
 disponibles en comentarios de Gits y en archivos Gits Markdown.
 
-Puedes utilizar Markdown es mayoría de los lugares de GitHub:
+Puedes utilizar Markdown en la mayoría de los lugares de GitHub:
 
   - [Gits](https://gist.github.com/)
   - Comentarios y _Issues_ y _Pull Requets_
@@ -79,50 +79,6 @@ También puedes simplemente identar tu código con cuatro espacios:
                 $.facebox({div:'#foo'})
             }
         }
-
-
-## Listas de Tareas ##
-
-    - [x] Soporte de @menciones, #referencias, [links](), **formateo**, y de <del>etiquetas</del>
-    - [x] lista de sintaxis requerida (cualquier lista des-ordenada y ordenada es soportada)
-    - [x] esta es una tarea completa
-    - [ ] esta es una tarea incompleta
-
-el resultado se vería así:
-
-  - [x] Soporte de @menciones, #referencias, [links](), **formateo**, y de <del>etiquetas</del>
-  - [x] lista de sintaxis requerida (cualquier lista des-ordenada y ordenada es soportada)
-  - [x] esta es una tarea completa
-  - [ ] esta es una tarea incompleta
-
-
-## Referencias SHA ##
-
-Cualquier referencia a un hash SHA-1 _commit_ será automáticamente convertido
-en un link a ese _commit_ en GitHub.
-
-```
-16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
-```
-
-## Referencias _Issue_ dentro de un repositorio ##
-
-Cualquier número que refiera a un _Issue_ o _Pull Request_ será
-automáticamente convertido en un link.
-
-    #1
-    mojombo#1
-    mojombo/github-flavored-markdown#1
-
-
-## @menciones a usuario ##
-
-Escribiendo un símbolo de `@`, seguido del nombre-de-usuario, notificará a
-esa persona para que venga y vea el comentario. Esto es conocido como
-"@mención", porque tu estas mencionando a la persona. También puedes
-@mencionar equipos dentro de una organización.
 
 
 ## links automáticos para URLs ##
@@ -205,3 +161,51 @@ GitHub soporta emoji :sparkles: :camel: :boom: Para ver la lista de
 imágenes que soporta, da un vistazo a la [Hoja de Datos Emoji][Emoji].
 
 [Emoji]: http://www.emoji-cheat-sheet.com/
+
+
+* * *
+
+
+## Sintaxis extra ##
+
+La siguiente sintaxis de [GitHub Flavored Markdown][GFM]
+sólo está disponibles para las descripciones y comentarios de _issues_ y
+_Pull Requests_.
+
+
+### Listas de Tareas ###
+
+    - [x] Soporte de @menciones, #referencias, [links](), **formateo**, y de <del>etiquetas</del>
+    - [x] lista de sintaxis requerida (cualquier lista des-ordenada y ordenada es soportada)
+    - [x] esta es una tarea completa
+    - [ ] esta es una tarea incompleta
+
+
+### Referencias SHA ###
+
+Cualquier referencia a un hash SHA-1 _commit_ será automáticamente convertido
+en un link a ese _commit_ en GitHub.
+
+```
+16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+```
+
+
+### Referencias _Issue_ dentro de un repositorio ###
+
+Cualquier número que refiera a un _Issue_ o _Pull Request_ será
+automáticamente convertido en un link.
+
+    #1
+    mojombo#1
+    mojombo/github-flavored-markdown#1
+
+
+### @menciones a usuario ###
+
+Escribiendo un símbolo de `@`, seguido del nombre-de-usuario, notificará a
+esa persona para que venga y vea el comentario. Esto es conocido como
+"@mención", porque tu estas mencionando a la persona. También puedes
+@mencionar equipos dentro de una organización.
