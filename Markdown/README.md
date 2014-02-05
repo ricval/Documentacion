@@ -8,14 +8,14 @@ convenciones existentes para marcar mensajes de correo electrónico usando
 texto plano. Markdown convierte el texto marcado en documentos XHTML bien
 formado.
 
-Enlace al sitio web: [daringfireball][]
+Enlace al sitio oficial web: [daringfireball][]
 
   [daringfireball]: http://daringfireball.net/projects/markdown/
 
 Traducciones hechas por mí del sitio:
 
-  - [Lo Básico](daringfireball/basics.text)
-  - [Sintaxis](daringfireball/syntax.text)
+  - [Lo Básico](daringfireball/basics.md)
+  - [Sintaxis](daringfireball/syntax.md)
 
 
 
@@ -27,8 +27,9 @@ conjunto de características adicionales, muchas de ellas para hacer más fácil
 trabajar con el contenido en GitHub.com, lo llaman así mismo
 [GitHub Flavored Markdown][GFM].
 
-Aquí puedes consultar un resumen de sus características en español
-[GitHub Flavored Markdown en español][GFM_es].
+Aquí puedes consultar un resumen de sus características en español:
+  
+  * [GitHub Flavored Markdown en español][GFM_es].
   
   [GFM]:    https://help.github.com/articles/github-flavored-markdown
   [GFM_es]: GitHub_Flavores_Markdown.md

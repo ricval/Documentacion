@@ -23,7 +23,7 @@ Puedes utilizar Markdown en la mayoría de los lugares de GitHub:
 El estándar Markdown convierte el texto que comienza con cuatros espacios en
 cada línea en un bloque de código; GFM también soporta bloques de código. Sólo
 encierra tu código en ```` ``` ```` (como se muestra enseguida) y no necesitarás
-identar con cuatro espacios tu código. Note que que los bloques de código
+identar con cuatro espacios tu código. Note que los bloques de código
 _Fenced_ no tienen que estar precedidos por una línea en blanco -- a
 diferencia de los bloques de código identados -- aun así recomendamos colocar
 una línea en blanco antes del bloque para hacer que el archivo fuente Markdown

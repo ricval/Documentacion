@@ -1,17 +1,16 @@
 Markdown: Lo Básico
 ===================
 
-<ul id="ProjectSubmenu">
-    <li><a href="/projects/markdown/" title="Markdown Project Page">Principal</a></li>
-    <li><a class="selected" title="Markdown Basics">Básico</a></li>
-    <li><a href="/projects/markdown/syntax" title="Markdown Syntax Documentation">Sintaxis</a></li>
-    <li><a href="/projects/markdown/license" title="Pricing and License Information">Licencia</a></li>
-    <li><a href="/projects/markdown/dingus" title="Online Markdown Web Form">Dingus</a></li>
-</ul>
+  - [Resumen de la sintaxis Markdown](#Resumen de la sintaxis Markdown)
+  - [Párrafos, Encabezados, _Blockquotes_](#Párrafos, Encabezados, _Blockquotes_)
+  - [Frases Enfatizadas](#Frases Enfatizadas)
+  - [Listas](#Listas)
+  - [Links](#Links)
+  - [Imágenes](#Imágenes)
+  - [Código](#Código)
 
 
-Síntesis de la sintaxis de Markdown
------------------------------------
+## Resumen de la sintaxis Markdown ##
 
 Markdown es un lenguaje de marcado ligero creado originalmente por John Gruber
 y Aaron Swartz que trata de conseguir la máxima legibilidad y "publicabilidad"
@@ -20,12 +19,12 @@ convenciones existentes para marcar mensajes de correo electrónico usando
 texto plano. Markdown convierte el texto marcado en documentos XHTML bien
 formados.
 
-**Nota:** Este documento está escrito usando Markdown; puedes
-[ver el fuente añadiendo '.text' a la URL][src].
+**Nota:** Este documento es una traducción del sitio oficial que está en Inglés
+[daringfireball : basics][src].
 
-  [s]: /projects/markdown/syntax  "Markdown Syntax"
-  [d]: /projects/markdown/dingus  "Markdown Dingus"
-  [src]: /projects/markdown/basics.text
+  [src]: http://daringfireball.net/projects/markdown/basics
+
+
 
 ## Párrafos, Encabezados, _Blockquotes_ ##
 
@@ -42,11 +41,12 @@ estilo-atx, necesitas poner de 1-6 caracteres _hash_ (`#`) al principio y
 final de la linea -- el número de caracteres _hash_ equivale al nivel de
 encabezado HTML resultante.
 
-Los _Blockquotes_ son indicados usando estilo-email '`>`' carácter de mayor-
-que.
+Los _Blockquotes_ son indicados usando estilo-email '`>`' carácter de
+mayor-que.
 
-Markdown
+Markdown:
 
+```markdown
     Primer Nivel de Encabezado
     ==========================
 
@@ -67,9 +67,11 @@ Markdown
     > Éste es el segundo párrafo en el blockquote.
     >
     > ## Éste es un H2 en un blockquote
+```
 
-Salida:
+Salida en código HTML:
 
+```html
     <h1>Primer Nivel de Encabezado</h1>
 
     <h2>Segundo Nivel de Encabezado</h2>
@@ -90,29 +92,73 @@ Salida:
 
         <h2>Éste es un H2 en un blockquote</h2>
     </blockquote>
+```
+
+Salida Renderizada:
+
+* * *
+
+Primer Nivel de Encabezado
+==========================
+
+Segundo Nivel de Encabezado
+---------------------------
+
+Ahora es el momento para todos los hombres
+buenos de venir a ayudar a su país. Este es
+sólo un párrafo normal.
+
+El ágil zorro café brinco sobre el lomo
+de un perro perezoso.
+
+### Encabezado 3
+
+> Éste es un blockquote.
+>
+> Éste es el segundo párrafo en el blockquote.
+>
+> ## Éste es un H2 en un blockquote
+
+* * *
 
 
-### Frase Enfatizada ###
 
-Markdown utiliza el asterisco y el guión-bajo para indicar segmentos
+## Frases Enfatizadas ##
+
+Markdown utiliza el asterisco `*` y el guión-bajo `_` para indicar segmentos
 enfatizados.
 
 Markdown:
 
+```markdown
     Algo de esas palabras *son enfatizadas*.
     Algo de esas palabras _son enfatizadas también_.
 
     Utilice dos asteriscos para **un enfatizado mayor**.
     O, si prefiere, __utilice dos guiones-bajos en su lugar__.
+```
 
-Salida:
+Salida HTML:
 
+```html
     <p>Algo de esas palabras <em>son enfatizadas</em>.
     Algo de esas palabras <em>son enfatizadas también</em>.</p>
 
     <p>Utilice dos asteriscos para <strong>strong emphasis</strong>.
     O, si prefiere, <strong>utilice dos guiones-bajos en su lugar</strong>.</p>
+```
 
+Salida Renderizada:
+
+* * *
+
+Algo de esas palabras *son enfatizadas*.
+Algo de esas palabras _son enfatizadas también_.
+
+Utilice dos asteriscos para **un enfatizado mayor**.
+O, si prefiere, __utilice dos guiones-bajos en su lugar__.
+
+* * *
 
 ## Listas ##
 
@@ -138,11 +184,23 @@ y así:
 
 todos producen la misma salida:
 
+```html
     <ul>         
     <li>Caramelo.</li>
     <li>Chicle.</li>
     <li>Chocolate.</li>
     </ul>
+```
+
+Render:
+
+* * *
+
+  - Caramelo.
+  - Chicle.
+  - Chocolate.
+
+* * *
 
 Las listas ordenadas (numeradas) utilizan normalmente números, seguidos por un
 punto, como marcadores de lista:
@@ -151,13 +209,25 @@ punto, como marcadores de lista:
     2.  Verde
     3.  Azul
 
-Salida:
+Salida HTML:
 
+```html
     <ol>
     <li>Rojo</li>
     <li>Verde</li>
     <li>Azul</li>
     </ol>
+```
+
+Render:
+
+* * *
+
+  1. Rojo
+  2. Verde
+  3. Azul
+
+* * *
 
 Si colocas líneas en blanco entre los _items_, obtendrás una etiqueta `<p>`
 para el texto de ese _item_. Puedes crear una lista de _items_ multi-párrafo
@@ -169,13 +239,27 @@ para los párrafos identados a 4 espacios ó 1 tab:
 
     *   Otro item en la lista.
 
-Salida:
+Salida HTML:
 
+```html
     <ul>
     <li><p>Un item de la lista.</p>
     <p>Con múltiples párrafos.</p></li>
     <li><p>Otro item en la lista.</p></li>
     </ul>
+```
+
+Render:
+
+* * *
+
+  * Un item de la lista.
+
+    Con múltiples párrafos.
+
+  * Otro item en la lista.
+
+* * *
 
 
 
@@ -188,49 +272,78 @@ texto que quieras convertir en link.
 Los links estilo en-línea utilizan los paréntesis normales inmediatamente
 después del texto del link. Por ejemplo:
 
+Markdown:
+
+```markdown
     Este es un [ejemplo de un link](http://ejemplo.com).
+```
 
-Salida:
+Salida HTML:
 
+```html
     <p>Este es un <a href="http://ejemplo.com/">ejemplo de un link</a>.</p>
+```
+
+Render:
+
+* * *
+
+Este es un [ejemplo de un link](http://ejemplo.com).
+
+* * *
 
 Opcionalmente, puedes incluir un atributo título en el paréntesis:
 
+```markdown
     Este es un [ejemplo de un link](http://ejemplo.com "Con un Título").
+```
 
 Salida:
 
+```html
     <p>Este es un <a href="http://ejemplo.com/" title="Con un Título">
     ejemplo de un link</a>.</p>
+```
 
 Los links estilo por-referencia te permiten hacer referencia a tus links por
 nombres, que defines en otra parte de tu documento:
 
+```markdown
     Obtengo 10 veces más trafico de [Google][1] que de [Yahoo][2] o [MSN][3].
 
     [1]: http://google.com/        "Google"
     [2]: http://search.yahoo.com/  "Yahoo Search"
     [3]: http://search.msn.com/    "MSN Search"
+```
 
-Salida:
+Salida HTML:
 
+```html
     <p>Obtengo 10 veces más trafico de <a href="http://google.com/"
     title="Google">Google</a> que de <a href="http://search.yahoo.com/"
     title="Yahoo Search">Yahoo</a> o <a href="http://search.msn.com/"
     title="MSN Search">MSN</a>.</p>
+```
 
 El atributo _title_ es opcional. Los nombres de los links pueden contener
 letras, números y espacios, perno *no* son sensibles mayúsculas o minúsculas.
 
+Markdown:
+
+```markdown
     He comenzado mi día con una taza de café y con
     [El New York Times][NY Times].
 
     [ny times]: http://www.nytimes.com/
+```
 
-Salida:
+Salida HTML:
 
+```html
     <p>He comenzado mi día con una taza de café y con
     <a href="http://www.nytimes.com/">El New York Times</a>.</p>
+```
+
 
 
 ### Imágenes ###
@@ -239,17 +352,23 @@ La sintaxis para imágenes es muy similar a la de los links.
 
 En-línea (los títulos son opcionales):
 
+```markdown
     ![texto alternativo](/path/to/img.jpg "Título")
+```
 
 Por-referencia:
 
+```markdown
     ![texto alternativo][id]
 
     [id]: /path/to/img.jpg "Título"
+```
 
-Ambos ejemplos de arriba producen la misma salida:
+Ambos ejemplos de arriba producen la misma salida HTML:
 
+```html
     <img src="/path/to/img.jpg" alt="texto alternativo" title="Título" />
+```
 
 
 ### Código ###
@@ -259,19 +378,36 @@ Cualquier amperson (`&`) y paréntesis triangular (`<` o `>`) automáticamente
 será transformado en código HTML. Esto hace fácil el uso de Markdown para
 escribir acerca de ejemplos de código HTML:
 
+Markdown:
+
+```markdown
     Recomiendo fuertemente no utilizar la etiqueta `<blink>`.
 
     Espero que SmartyPants utilice un nombrado de entidades como `&mdash;`
     en lugar de entidades codificado-decimal como `&#8212;`.
+```
 
 Salida:
 
+```html
     <p>Recomiendo fuertemente no utilizar la etiqueta
     <code>&lt;blink&gt;</code>.</p>
     
     <p>Espero que SmartyPants utilice un nombrado de entidades como
     <code>&amp;mdash;</code> en lugar de entidades codificado-decimal
     como <code>&amp;#8212;</code>.</p>
+```
+
+Render:
+
+* * *
+
+Recomiendo fuertemente no utilizar la etiqueta `<blink>`.
+
+Espero que SmartyPants utilice un nombrado de entidades como `&mdash;`
+en lugar de entidades codificado-decimal como `&#8212;`.
+
+* * *
 
 Para especificar un bloque entero de código pre-formateado, coloque una
 sangría en cada linea del bloque a 4 espacios o 1 tab. Al igual que con los
@@ -287,8 +423,9 @@ Markdown:
         <p>Por ejemplo.</p>
     </blockquote>
 
-Salida:
+Salida HTML:
 
+```html
     <p>Si quieres que esta pagina sea validada por XHTML 1.0 Strict,
     tienes que poner las etiquetas de párrafo en blockquotes:</p>
     
@@ -296,3 +433,17 @@ Salida:
         &lt;p&gt;Por ejemplo.&lt;/p&gt;
     &lt;/blockquote&gt;
     </code></pre>
+```
+
+Render:
+
+* * *
+
+Si quieres que esta pagina sea validada por XHTML 1.0 Strict, tienes que
+    poner las etiquetas de párrafo en blockquotes:
+
+    <blockquote>
+        <p>Por ejemplo.</p>
+    </blockquote>
+
+* * *

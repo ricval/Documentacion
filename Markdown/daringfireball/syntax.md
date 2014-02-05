@@ -33,10 +33,11 @@ Markdown: Sintaxis
     *   [Links Automáticos](#autolink)
     *   [Escape de Backslash](#backslash) 
 
-**Nota:** Este documento está escrito usando Markdown; puedes
-[ver el fuente añadiendo '.text' a la URL][src].
+**Nota:** Este documento es una traducción del sitio oficial que está en Inglés
+[daringfireball : syntax][src].
 
-    [src]: /projects/markdown/syntax.text
+  [src]: http://daringfireball.net/projects/markdown/syntax
+
 
 * * *
 
@@ -226,22 +227,26 @@ Los encabezados estilo-Setext son "subrayados" utilizando el signo de igual
 (para el primer-nivel de encabezado) y guiones (para el segundo-nivel de
 encabezados). Por ejemplo:
 
-    Esto es un H1
-    =============
+```markdown
+Esto es un H1
+=============
 
-    Esto es un H2
-    -------------
+Esto es un H2
+-------------
+```
 
 Cualquier cantidad de subrayado `=` o `-` funcionará.
 
 Los encabezados estilo-atx utilizan de 1-6 caracteres de gato o _hash_ al
 comienzo de la línea, que corresponden al nivel de encabezado. Por ejemplo:
 
-    # Este es un H1
+```markdown
+# Este es un H1
 
-    ## Este en un H2
+## Este en un H2
 
-    ###### Este es un H6
+###### Este es un H6
+```
 
 Opcionalmente, puedes "cerrar" los encabezados estilo-atx. Esto es meramente
 estético -- puedes utilizar esto si piensas que se ve mejor. Los _hashes_ de
@@ -249,12 +254,22 @@ cerrado no necesitan coincidir con los _hashes_ de apertura del encabezado.
 (Ya que el número de _hashes_ de apertura determinan el nivel del
 encabezado.):
 
-    # Este es un H1 #
+```markdown
+# Este es un H1 #
 
-    ## Este es un H2 ##
+## Este es un H2 ##
 
-    ### Este en un H3 ######
+### Este en un H3 ######
+```
 
+ | Nivel | Markdown | Resultado |
+ |:-----:|:----------------  :|:-----------:|
+ | H1    | `# H1 #`           | <h1>H1</h1>
+ | H2    | `## H2 ##`         | <h2>H2</h2>
+ | H3    | `### H3 ###`       | <h3>H3</h3>
+ | H4    | `#### H4 ####`     | <h4>H4</h4>
+ | H5    | `##### H5 #####`   | <h5>H5</h5>
+ | H6    | `###### H6 ######` | <h6>H6</h6>
 
 
 <h3 id="blockquote">Blockquotes</h3>
@@ -293,14 +308,32 @@ blockquote) agregado un nivel adicional de `>`:
 Los _Blockquotes_ pueden contener otros elementos Markdown, incluyendo
 encabezados, listas, y bloques de código:
 
-    > ## Este es un encabezado.
-    >
-    > 1.    Este es el primer _item_ de la lista.
-    > 2.    Este es el segundo _item_ de la lista.
-    >
-    > Aquí algo de código de ejemplo:
-    >
-    >       return shell_exec("echo $input | $markdown_script");
+```markdown
+> ## Este es un encabezado.
+>
+> 1.    Este es el primer _item_ de la lista.
+> 2.    Este es el segundo _item_ de la lista.
+>
+> Aquí algo de código de ejemplo:
+>
+>       return shell_exec("echo $input | $markdown_script");
+
+```
+
+Renderizado se ve así:
+
+* * *
+
+> ## Este es un encabezado.
+>
+> 1.    Este es el primer _item_ de la lista.
+> 2.    Este es el segundo _item_ de la lista.
+>
+> Aquí algo de código de ejemplo:
+>
+>       return shell_exec("echo $input | $markdown_script");
+
+* * *
 
 Cualquier editor decente debería poder hacer el citado de texto estilo-email
 fácilmente. Por ejemplo, con BBEdit, puedes hacer una selección y elegir
@@ -341,11 +374,23 @@ Es importante notar que los números que utilizas para hacer el listado no
 tienen efecto en el HTML de salida que produce Markdown. El HTML que produce
 Markdown del ejemplo de listado anterior sería así:
 
-    <ol>
-    <li>Pájaro</li>
-    <li>Zorro</li>
-    <li>Pez</li>
-    </ol>
+```html
+<ol>
+<li>Pájaro</li>
+<li>Zorro</li>
+<li>Pez</li>
+</ol>
+```
+
+Renderizado se vería así:
+
+* * *
+
+  1.  Pájaro
+  2.  Zorro
+  3.  Pez
+
+* * *
 
 Si escribes una lista en Markdown que se vea así:
 
@@ -396,12 +441,23 @@ esta entrada:
     *   Pájaro
     *   Magia
 
-se transformará en:
+se transformará en este código HTML:
 
-    <ul>
-    <li>Pájaro</li>
-    <li>Magia</li>
-    </ul>
+```html
+<ul>
+<li>Pájaro</li>
+<li>Magia</li>
+</ul>
+```
+
+renderizado se verá así:
+
+* * *
+
+*   Pájaro
+*   Magia
+
+* * *
 
 Pero este:
 
@@ -411,10 +467,12 @@ Pero este:
 
 se transformará en:
 
-    <ul>
-    <li><p>Pájaro</p></li>
-    <li><p>Magia</p></li>
-    </ul>
+```html
+<ul>
+<li><p>Pájaro</p></li>
+<li><p>Magia</p></li>
+</ul>
+```
 
 Los _items_ de las listas pueden consistir en múltiples párrafos. Cada párrafo
 subsecuente en la lista de _items_ debería ser identado por cuatro espacios o
@@ -486,9 +544,11 @@ entrada:
 
 Markdown generará:
 
-    <p>Esto es un párrafo normal:</p>
+```html
+<p>Esto es un párrafo normal:</p>
 
-    <pre><code>Esto es un bloque de código.</code></pre>
+<pre><code>Esto es un bloque de código.</code></pre>
+```
 
 Un nivel de identación -- 4 espacios o 1 tabulador -- es removido de cada
 línea del bloque de código. Por ejemplo, esto:
@@ -501,12 +561,26 @@ línea del bloque de código. Por ejemplo, esto:
 
 se convertirá en:
 
-    <p>Este es un ejemplo de AppleScript:</p>
+```html
+<p>Este es un ejemplo de AppleScript:</p>
 
-    <pre><code>tell application "Foo"</code></pre>
-        beep
+<pre><code>tell application "Foo"</code></pre>
+    beep
+end tell
+</code></pre>
+```
+
+que se verá así:
+
+* * *
+
+Este es un ejemplo de AppleScript:
+
+    tell application "Foo"
+        bee
     end tell
-    </code></pre>
+
+* * *
 
 Un bloque de código continua hasta encontrarse con una línea que no esté
 identada (o el final del articulo).
@@ -523,10 +597,12 @@ los símbolos. Por ejemplo, esto:
 
 se convertirá en:
 
-    <pre><code>&lt;div class="footer"&gt;
-        &amp;copy; 2004 Corporación Foo
-    &lt;/div&gt;
-    </code></pre>
+```html
+<pre><code>&lt;div class="footer"&gt;
+    &amp;copy; 2004 Corporación Foo
+&lt;/div&gt;
+</code></pre>
+```
 
 La sintaxis regular de Markdown no procesará el contenido de los bloques de
 código. Ejem., los asteriscos son sólo asteriscos literales dentro de un
@@ -569,37 +645,59 @@ texto del link, seguido por un par de paréntesis normales que contiene la URL
 a donde quieres que apunte tu link, *opcional* al lado puedes poner un titulo
 del link, encerrado por comillas. Por ejemplo:
 
-    Esto es [un ejemplo](http://ejemplo.com/ "Título") de un link en línea.
+```markdown
+Esto es [un ejemplo](http://ejemplo.com/ "Título") de un link en línea.
 
-    [Este link](http://ejemplo.net/) no tiene el atributo de título.
+[Este link](http://ejemplo.net/) no tiene el atributo de título.
+```
 
 producirá:
 
-    <p>Este es <a href="http://ejemplo.com/" title="Título">
-    de un link en línea.</a></p>
+```html
+<p>Este es <a href="http://ejemplo.com/" title="Título">
+de un link en línea.</a></p>
 
-    <p><a href="http://ejemplo.net/">Este link</a> no tiene
-    el atributo de título.</p>
+<p><a href="http://ejemplo.net/">Este link</a> no tiene
+el atributo de título.</p>
+```
+
+que se verá así:
+
+* * *
+
+Esto es [un ejemplo](http://ejemplo.com/ "Título") de un link en línea.
+
+[Este link](http://ejemplo.net/) no tiene el atributo de título.
+
+* * *
 
 Si te estás refiriendo a un recurso local en el mismo servidor, puedes
 utilizar rutas relativas:
 
-    Vea mi pagina [Acerca de](/acerca/) para más detalles.
+```markdown
+Vea mi pagina [Acerca de](/acerca/) para más detalles.
+```
 
 Los links estilo por-referencia utilizan un segundo par de paréntesis
 cuadrados, dentro del cual debes colocar una etiqueta para seleccionar un
 identificado del link:
 
-    Esto es [un ejemplo][id] de un link por-referencia.
+```markdown
+Esto es [un ejemplo][id] de un link por-referencia.
+```
 
 Opcionalmente puedes utilizar un espacio para separar el par de paréntesis:
 
-    Esto es [un ejemplo] [id] de un link por-referencia.
+```markdown
+Esto es [un ejemplo] [id] de un link por-referencia.
+```
 
 Entonces, en cualquier lugar del documento, puedes definir la dirección de tu
 etiqueta de link así, en una línea:
-    
-    [id]: http://ejemplo.com/  "Título opcional aquí"
+
+```markdown
+[id]: http://ejemplo.com/  "Título opcional aquí"
+```
 
 Esto es:
 
@@ -614,9 +712,11 @@ Esto es:
 
 Las siguientes tres definiciones de links son equivalentes:
 
-        [foo]: http://ejemplo.com/  "Título opcional aquí"
-        [foo]: http://ejemplo.com/  'Título opcional aquí'
-        [foo]: http://ejemplo.com/  (Título opcional aquí)
+```markdown
+    [foo]: http://ejemplo.com/  "Título opcional aquí"
+    [foo]: http://ejemplo.com/  'Título opcional aquí'
+    [foo]: http://ejemplo.com/  (Título opcional aquí)
+```
 
 **Nota: Hay un bug conocido en Markdown.pl 1.0.1 que impide encomillado simple
 **para delimitar los títulos de los links.
@@ -624,14 +724,18 @@ Las siguientes tres definiciones de links son equivalentes:
 La URL del link debería, opcionalmente, ser envuelta por paréntesis
 triangulares:
 
-    [id]: <http://ejemplo.com/>  "Título opcional aquí"
+```markdown
+[id]: <http://ejemplo.com/>  "Título opcional aquí"
+```
 
 Puedes colocar el atributo de título en la siguiente línea y utilizar espacios
 extra o tabulaciones para dar espaciado, y así se vea mejor las URL muy
 largas:
 
-    [id]: http://ejemplo.com/largisima/ruta/a/el/recurso/del/enlace
-        "Título opcional aquí"
+```markdown
+[id]: http://ejemplo.com/largisima/ruta/a/el/recurso/del/enlace
+    "Título opcional aquí"
+```
 
 Las definiciones de los links son utilizados solamente para crear links
 durante el procesado de Markdown, y son quitados de tu documento de salida
@@ -674,34 +778,42 @@ tu documento, como si fueran notas de pie de página.
 
 Aquí un ejemplo de links de referencia en acción:
 
-    Tengo 10 veces más trafico de [Google] [1] que de [Yahoo] [2] o [MSN] [3].
+```markdown
+Tengo 10 veces más trafico de [Google] [1] que de [Yahoo] [2] o [MSN] [3].
 
-        [1]: http://google.com/         "Google"
-        [2]: http://search.yahoo.com/   "Yahoo Search"
-        [3]: http://search.msn.com/     "MSN Search"
+    [1]: http://google.com/         "Google"
+    [2]: http://search.yahoo.com/   "Yahoo Search"
+    [3]: http://search.msn.com/     "MSN Search"
+```
 
 Utilizando la forma corta con el nombre implícito, podrías escribirlo:
 
-    Tengo 10 veces más trafico de [Google][] que de
-    [Yahoo][] o [MSN][].
+```markdown
+Tengo 10 veces más trafico de [Google][] que de
+[Yahoo][] o [MSN][].
 
     [google]: http://google.com/        "Google"
     [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
     [msn]:    http://search.msn.com/    "MSN Search"
+```
 
 Ambos ejemplos anteriores producirán la siguiente salida HTML:
 
-    <p>Tengo 10 veces más trafico de <a href="http://google.com/"
-    title="Google">Google</a> que de <a href="http://search.yahoo.com/"
-    title="Yahoo Search">Yahoo</a> o <a href="http://search.msn.com/"
-    title="MSN Search">MSN</a>.</p>
+```html
+<p>Tengo 10 veces más trafico de <a href="http://google.com/"
+title="Google">Google</a> que de <a href="http://search.yahoo.com/"
+title="Yahoo Search">Yahoo</a> o <a href="http://search.msn.com/"
+title="MSN Search">MSN</a>.</p>
+```
 
 Para comparación, aquí está el mismo párrafo escrito utilizando estilo
 en-línea Markdown:
 
-    Tengo 10 veces más trafico de [Google](http://google.com/ "Google")
-    que de [Yahoo](http://search.yahoo.com/ "Yahoo Search")
-    o [MSN](http://search.msn.com/ "MSN Search").
+```markdown
+Tengo 10 veces más trafico de [Google](http://google.com/ "Google")
+que de [Yahoo](http://search.yahoo.com/ "Yahoo Search")
+o [MSN](http://search.msn.com/ "MSN Search").
+```
 
 El punto de los enlaces estilo por-referencia no es que sean más fáciles de
 escribir. El punto es que con los enlaces estilo por-referencia, tu documento
@@ -733,20 +845,38 @@ Ejem., ésta estrada:
 
 producirá:
 
-    <em>asteriscos simple</em>
+```html
+<em>asteriscos simple</em>
 
-    <em>guión-bajo simple</em>
+<em>guión-bajo simple</em>
 
-    <strong>asteriscos dobles</strong>
+<strong>asteriscos dobles</strong>
 
-    <strong>guión-bajo dobles</strong>
+<strong>guión-bajo dobles</strong>
+```
+
+que se verá así:
+
+* * *
+
+*asteriscos simple*
+
+_guión-bajo simple_
+
+**asteriscos dobles**
+
+__guión-bajo dobles__
+
+* * *
 
 Puedes utilizar cualquier estilo que prefieras; la única restricción es que el
 mismo carácter debe ser utilizado para abrir y cerrar el texto a enfatizar.
 
 El enfatizado puede ser utilizado en medio de una palabra:
 
-    por*increíble*que parezca.
+```markdown
+por*increíble*que parezca.
+```
 
 Pero si rodeas un `*` ó un `_` con espacios, será tratado como un asterisco o
 guión-bajo normal.
@@ -769,7 +899,17 @@ de código muestra código dentro de un párrafo normal. Por ejemplo:
 
 Esto producirá:
 
-    <p>Utilice la función <code>prinf()</code> para imprimir texto.</p>
+```html
+<p>Utilice la función <code>prinf()</code> para imprimir texto.</p>
+```
+
+que se verá así:
+
+* * *
+
+Utilice la función `printf()` para imprimir texto.
+
+* * *
 
 Para incluir un carácter de apostrofe invertido literal dentro de un segmento
 de código, puede utilizar múltiples apostrofes inversos como delimitadores de
@@ -779,7 +919,9 @@ apertura y cerrado:
 
 lo que producirá esto:
 
-    <p><code>Aquí se muestra (`) un apostrofe invertido.</code></p>
+```html
+<p><code>Aquí se muestra (`) un apostrofe invertido.</code></p>
+```
 
 Los delimitadores apostrofes inversos que rodean un segmento de código pueden
 incluir espacios -- uno después de la apertura, uno antes del cerrado. Esto le
@@ -791,12 +933,25 @@ código:
     Un texto delimitador-apostrofe-invertido en un segmento de
     código: `` `foo` ``
 
-producirá:
+producirá el HTML:
 
-    <p>Un apostrofe invertido en un segmento de código: <code>`</code></p>
+```html
+<p>Un apostrofe invertido en un segmento de código: <code>`</code></p>
 
-    <p>Un texto delimitador-apostrofe-invertido en un segmento de
-    código: <code>`foo`</code></p>
+<p>Un texto delimitador-apostrofe-invertido en un segmento de
+código: <code>`foo`</code></p>
+```
+
+que se verá:
+
+* * *
+
+Un apostrofe invertido en un segmento de código: `` ` ``
+
+Un texto delimitador-apostrofe-invertido en un segmento de
+código: `` `foo` ``
+
+* * *
 
 Con un segmento de código, los apersons y los paréntesis triangulares son
 codificados automáticamente en entidades HTML, lo que hace fácil el incluir
@@ -806,16 +961,36 @@ ejemplos de etiquetas HTML. Markdown convertirá esto:
 
 en esto:
 
-    <p>Por favor no utilice ninguna etiqueta <code>&lt;blink&gt;</code>.</p>
+```html
+<p>Por favor no utilice ninguna etiqueta <code>&lt;blink&gt;</code>.</p>
+```
+
+que se ve así:
+
+* * *
+
+Por favor no utilice ninguna etiqueta `<blink>`.
+
+* * *
 
 Puede escribir esto:
 
     `&#8212;` es la codificación-decimal equivalente de `&mdash;`.
 
-para producir:
+para producir este resultado HTML:
 
-    <p><code>&amp;#8212;</code>es la codificación-decimal
-    equivalente de <code>&amp;mdash;</code>.</p>
+```html
+<p><code>&amp;#8212;</code>es la codificación-decimal
+equivalente de <code>&amp;mdash;</code>.</p>
+```
+
+que se verá así:
+
+* * *
+
+`&#8212;` es la codificación-decimal equivalente de `&mdash;`.
+
+* * *
 
 
 
@@ -830,9 +1005,11 @@ utilizada para los links, aplicable para los dos estilos: *en-línea* y
 
 La sintaxis para el estilo en-línea se ve así:
 
-    ![Texto Alt](/ruta/de/la/imagen.jpg)
+```markdown
+![Texto Alt](/ruta/de/la/imagen.jpg)
 
-    ![Texto Alt](/ruta/de/la/imagen.jpg "Título opcional")
+![Texto Alt](/ruta/de/la/imagen.jpg "Título opcional")
+```
 
 Esto es:
 
@@ -875,7 +1052,9 @@ puedes hacer esto:
 
 Markdown lo convertirá en esto:
 
-    <a href="http://ejemplo.com/">http://ejemplo.com/</a>
+```html
+<a href="http://ejemplo.com/">http://ejemplo.com/</a>
+```
 
 Los links automáticos para direcciones de correo electrónico funcionan de
 forma similar, excepto que Markdown los transformará un poco por decimales
@@ -887,13 +1066,23 @@ transformará esto:
 
 en algo como esto:
 
-    <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#x61;&#x64;&#x64;&#x72;&#x65;
-    &#115;&#115;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;
-    &#109;">&#x61;&#x64;&#x64;&#x72;&#x65;&#115;&#115;&#64;&#101;&#120;&#x61;
-    &#109;&#x70;&#x6C;e&#x2E;&#99;&#111;&#109;</a>
+```html
+<a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#x61;&#x64;&#x64;&#x72;&#x65;
+&#115;&#115;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;
+&#109;">&#x61;&#x64;&#x64;&#x72;&#x65;&#115;&#115;&#64;&#101;&#120;&#x61;
+&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;&#109;</a>
+```
 
-Ésto sera interpretado en el navegador como un link enlazado
+Ésto será interpretado en el navegador como un link enlazado
 a "address@example.com".
+
+así:
+
+* * *
+
+<address@example.com>
+
+* * *
 
 (Este pequeño truco de codificación-en-entidades engañara a varios, si no es
 (que a muchos, _bots_ recolectores de direcciones, pero en definitiva no
