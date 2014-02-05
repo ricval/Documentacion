@@ -1,37 +1,28 @@
 Markdown: Sintaxis
 ==================
 
-<ul id="ProjectSubmenu">
-    <li><a href="/projects/markdown/" title="Markdown Project Page">Principal</a></li>
-    <li><a href="/projects/markdown/basics" title="Markdown Basics">Básico</a></li>
-    <li><a class="selected" title="Markdown Syntax Documentation">Sintaxis</a></li>
-    <li><a href="/projects/markdown/license" title="Pricing and License Information">Licencia</a></li>
-    <li><a href="/projects/markdown/dingus" title="Online Markdown Web Form">Dingus</a></li>
-</ul>
+*   [Resumen](#resumen)
+    *   [Filosofía](#filosofía)
+    *   [HTML en línea](#html-en-línea)
+    *   [Escape automático para Caracteres Especiales](#escape-automático-para-caracteres-especiales) 
 
+*   [Elementos de Bloque](#elementos-de-bloque)
+    *   [Párrafos y saltos de línea](#párrafos-y-saltos-de-línea)
+    *   [Encabezados](#encabezados)
+    *   [Blockquotes](#blockquotes)
+    *   [Listas](#listas)
+    *   [Bloques de Código](#bloques-de-código)
+    *   [Barras Horizontales](#barras-horizontales)
 
-*   [Resumen](#overview)
-    *   [Filosofía](#philosophy)
-    *   [HTML en línea](#html)
-    *   [Escape automático para Caracteres Especiales](#autoescape) 
+*   [Elementos de segmento](#elementos-de-segmento)
+    *   [Links](#links)
+    *   [Énfasis](#Énfasis)
+    *   [Código](#código)
+    *   [Imágenes](#imágenes)
 
-*   [Elementos de Bloque](#block)
-    *   [Párrafos y saltos de línea](#p)
-    *   [Encabezados](#header)
-    *   [Blockquotes](#blockquote)
-    *   [Listas](#list)
-    *   [Bloques de Código](#precode)
-    *   [Barras Horizontales](#hr)
-
-*   [Elementos de segmento](#span)
-    *   [Links](#link)
-    *   [Énfasis](#em)
-    *   [Código](#code)
-    *   [Imágenes](#img)
-
-*   [Misceláneo](#misc)
-    *   [Links Automáticos](#autolink)
-    *   [Escape de Backslash](#backslash) 
+*   [Misceláneo](#misceláneo)
+    *   [Links Automáticos](#links-automáticos)
+    *   [Escape de Backslash](#escapes-con-diagonal-inversa) 
 
 **Nota:** Este documento es una traducción del sitio oficial que está en Inglés
 [daringfireball : syntax][src].
@@ -41,9 +32,9 @@ Markdown: Sintaxis
 
 * * *
 
-<h2 id="overview">Resumen</h2>
+## Resumen ##
 
-<h3 id="philosophy">Filosofía</h3>
+### Filosofía ###
 
 Markdown tiene el propósito de hacer el fácil-de-leer y fácil-de-escribir
 tanto como sea posible.
@@ -74,7 +65,7 @@ formato de email.
 
 
 
-<h3 id="html">HTML en línea</h3>
+### HTML en línea ###
 
 La sintaxis Markdown está inspirada por un propósito: ser utilizado como
 formato de *escritura* para la web.
@@ -127,7 +118,7 @@ A diferencia de las etiquetas HTML nivel-de-bloque, la sintaxis Markdown
 *es* procesada dentro de las etiquetas nivel-de-segmento.
 
 
-<h3 id="autoescape">Escape automático para Caracteres Especiales</h3>
+### Escape automático para Caracteres Especiales ###
 
 En HTML, hay dos caracteres que requieren tratamiento especial: `<` y `&`.
 El carácter de menor-que que es utilizado para comenzar una etiqueta; y los
@@ -185,10 +176,10 @@ ser escapado.)
 
 * * *
 
-<h2 id="block">Elementos de Bloque</h2>
+## Elementos de Bloque ##
 
 
-<h3 id="p">Párrafos y saltos de línea</h3>
+### Párrafos y saltos de línea ###
 
 Un párrafo es una o más líneas de texto consecutivas, separadas por uno o más
 líneas en blanco. (Una línea en blanco es cualquier línea que se vea como una
@@ -219,7 +210,7 @@ formato de salto de líneas duro.
 
 
 
-<h3 id="header">Encabezados</h3>
+### Encabezados ###
 
 Markdown soporta dos estilos de encabezados, [Setext][1] y [atx][2].
 
@@ -262,8 +253,8 @@ encabezado.):
 ### Este en un H3 ######
 ```
 
- | Nivel | Markdown | Resultado |
- |:-----:|:----------------  :|:-----------:|
+ | Nivel | Markdown           | Resultado   |
+ | :---: | :----------------: | :---------: |
  | H1    | `# H1 #`           | <h1>H1</h1>
  | H2    | `## H2 ##`         | <h2>H2</h2>
  | H3    | `### H3 ###`       | <h3>H3</h3>
@@ -272,7 +263,8 @@ encabezado.):
  | H6    | `###### H6 ######` | <h6>H6</h6>
 
 
-<h3 id="blockquote">Blockquotes</h3>
+
+### Blockquotes ###
 
 Markdown utiliza el carácter `>` del estilo-email para _blockquoting_. Si
 estas familiarizado con texto citado en un mensaje de email, entonces sabes
@@ -341,7 +333,7 @@ Incrementar el Nivel de Citado desde el menú de Texto.
 
 
 
-<h3 id="list">Listas</h3>
+### Listas ###
 
 Markdown soporta listas ordenadas (numeradas) y des-ordenadas (viñetas).
 
@@ -527,7 +519,7 @@ el punto:
 
 
 
-<h3 id="precode">Bloques de Código</h3>
+### Bloques de Código ###
 
 Los bloques de código pre-formateado son utilizados para escribir acerca de
 programación o remarcar un código fuente. Mejor que los párrafos normales, las
@@ -611,7 +603,7 @@ escribir acerca de la propia sintaxis de Markdown.
 
 
 
-<h3 id="hr">Barras Horizontales</h3>
+### Barras Horizontales ###
 
 Puedes crear una etiqueta de barra horizontal (`<hr>`) colocando tres o más
 asteriscos, o guiones-medios en una línea. Si deseas, puedes colocar espacios
@@ -631,9 +623,11 @@ ejemplos producirá una barra horizontal:
 
 * * *
 
-<h2 id="span">Elementos de Segmento</h2>
 
-<h3 id="link">Links</h3>
+
+## Elementos de Segmento ##
+
+### Links ###
 
 Markdown soporta dos tipos de links: *en-línea* y *por-referencia*.
 
@@ -648,17 +642,15 @@ del link, encerrado por comillas. Por ejemplo:
 ```markdown
 Esto es [un ejemplo](http://ejemplo.com/ "Título") de un link en línea.
 
-[Este link](http://ejemplo.net/) no tiene el atributo de título.
+  [Este link](http://ejemplo.net/) no tiene el atributo de título.
 ```
 
 producirá:
 
 ```html
-<p>Este es <a href="http://ejemplo.com/" title="Título">
-de un link en línea.</a></p>
+<p>Este es <a href="http://ejemplo.com/" title="Título">de un link en línea.</a></p>
 
-<p><a href="http://ejemplo.net/">Este link</a> no tiene
-el atributo de título.</p>
+<p><a href="http://ejemplo.net/">Este link</a> no tiene el atributo de título.</p>
 ```
 
 que se verá así:
@@ -696,7 +688,7 @@ Entonces, en cualquier lugar del documento, puedes definir la dirección de tu
 etiqueta de link así, en una línea:
 
 ```markdown
-[id]: http://ejemplo.com/  "Título opcional aquí"
+    [id]: http://ejemplo.com/  "Título opcional aquí"
 ```
 
 Esto es:
@@ -725,7 +717,7 @@ La URL del link debería, opcionalmente, ser envuelta por paréntesis
 triangulares:
 
 ```markdown
-[id]: <http://ejemplo.com/>  "Título opcional aquí"
+    [id]: <http://ejemplo.com/>  "Título opcional aquí"
 ```
 
 Puedes colocar el atributo de título en la siguiente línea y utilizar espacios
@@ -733,8 +725,8 @@ extra o tabulaciones para dar espaciado, y así se vea mejor las URL muy
 largas:
 
 ```markdown
-[id]: http://ejemplo.com/largisima/ruta/a/el/recurso/del/enlace
-    "Título opcional aquí"
+    [id]: http://ejemplo.com/largisima/ruta/a/el/recurso/del/enlace
+        "Título opcional aquí"
 ```
 
 Las definiciones de los links son utilizados solamente para crear links
@@ -828,7 +820,7 @@ información relacionada a los enlaces estén fuera del párrafo, así puedes
 agregar enlaces sin interrumpir el flujo de la lectura.
 
 
-<h3 id="em">Énfasis</h3>
+### Énfasis ###
 
 Markdown trata los asteriscos (`*`) y guiones-bajos (`_`) como indicadores de
 énfasis. El texto envuelto entre un `*` ó `_` será envuelto por una etiqueta
@@ -889,7 +881,7 @@ invertida para escaparlo:
 
 
 
-<h3 id="code">Código</h3>
+### Código ###
 
 Para indicar un segmento de código, envuélvalo con un apostrofe invertido
 (`` ` ``). A diferencia de los bloques de código pre-formateado, un segmento
@@ -938,8 +930,7 @@ producirá el HTML:
 ```html
 <p>Un apostrofe invertido en un segmento de código: <code>`</code></p>
 
-<p>Un texto delimitador-apostrofe-invertido en un segmento de
-código: <code>`foo`</code></p>
+<p>Un texto delimitador-apostrofe-invertido en un segmento de código: <code>`foo`</code></p>
 ```
 
 que se verá:
@@ -980,8 +971,7 @@ Puede escribir esto:
 para producir este resultado HTML:
 
 ```html
-<p><code>&amp;#8212;</code>es la codificación-decimal
-equivalente de <code>&amp;mdash;</code>.</p>
+<p><code>&amp;#8212;</code>es la codificación-decimal equivalente de <code>&amp;mdash;</code>.</p>
 ```
 
 que se verá así:
@@ -994,7 +984,7 @@ que se verá así:
 
 
 
-<h3 id="img">Imágenes</h3>
+### Imágenes ###
 
 La verdad es que es bastante difícil idear una sintaxis "natural" para colocar
 imágenes dentro de un documento de texto plano.
@@ -1038,9 +1028,9 @@ Markdown no tiene sintaxis para especificar las dimensiones de una imagen; si
 * * *
 
 
-<h2 id="misc">Misceláneo</h2>
+## Misceláneo ##
 
-<h3 id="autolink">Links Automáticos</h3>
+### Links Automáticos ###
 
 Markdown soporta una forma corta para crear links en "automático" para URLs y
 direcciones de correo electrónico: simplemente encierre las URL o direcciones
@@ -1091,7 +1081,7 @@ así:
 
 
 
-<h3 id="backslash">Escapes con Diagonal-Inversa</h3>
+### Escapes con Diagonal-Inversa ###
 
 Markdown te permite utilizar escapes con diagonal-inversa para generar
 caracteres literales que de otra forma tendrían un significado especial dentro

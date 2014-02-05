@@ -1,13 +1,13 @@
 Markdown: Lo Básico
 ===================
 
-  - [Resumen de la sintaxis Markdown](#Resumen de la sintaxis Markdown)
-  - [Párrafos, Encabezados, _Blockquotes_](#Párrafos, Encabezados, _Blockquotes_)
-  - [Frases Enfatizadas](#Frases Enfatizadas)
-  - [Listas](#Listas)
-  - [Links](#Links)
-  - [Imágenes](#Imágenes)
-  - [Código](#Código)
+  - [Resumen de la sintaxis Markdown](#resumen-de-la-sintaxis-markdown)
+  - [Párrafos, Encabezados, _Blockquotes_](#párrafos-encabezados-blockquotes)
+  - [Frases Enfatizadas](#frases-enfatizadas)
+  - [Listas](#listas)
+  - [Links](#links)
+  - [Imágenes](#imágenes)
+  - [Código](#código)
 
 
 ## Resumen de la sintaxis Markdown ##
