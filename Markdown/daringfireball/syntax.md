@@ -253,15 +253,6 @@ encabezado.):
 ### Este en un H3 ######
 ```
 
- | Nivel | Markdown           | Resultado   |
- | :---: | :----------------: | :---------: |
- | H1    | `# H1 #`           | <h1>H1</h1>
- | H2    | `## H2 ##`         | <h2>H2</h2>
- | H3    | `### H3 ###`       | <h3>H3</h3>
- | H4    | `#### H4 ####`     | <h4>H4</h4>
- | H5    | `##### H5 #####`   | <h5>H5</h5>
- | H6    | `###### H6 ######` | <h6>H6</h6>
-
 
 
 ### Blockquotes ###
@@ -1091,6 +1082,14 @@ etiquetas HTML `<em>`), puedes utilizar una diagonal-inversa antes de cada
 asterisco, así:
 
     \*asteriscos literales\*
+
+render:
+
+* * *
+
+\*asteriscos literales\*
+
+* * *
 
 Markdown provee escapes con diagonal-inversa para los siguientes caracteres:
 
