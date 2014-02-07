@@ -41,7 +41,7 @@ GitHub es genial para manejar toda la información _acerca_ de código. Ésta gu
 
 ## Maestría en _Markdown_ ##
 
-La mayoría del texto en GitHub es procesado a través de un lenguaje de marcado ligero llamado _Markdown_ — es la forma fácil de incluir formato simple a tus textos (como _italicas_, __negritras__, listas, y [links][Markdown]). Esta guía te mostrará el manejo del lenguaje Markdown en GitHub.
+La mayoría del texto en GitHub es procesado a través de un lenguaje de marcado ligero llamado _Markdown_ — es la forma fácil de incluir formato simple a tus textos (como _italicas_, __negritras__, listas, y [links](mastering-markdown.md)). Esta guía te mostrará el manejo del lenguaje Markdown en GitHub.
 
 > Lectura de 3 minutos
 

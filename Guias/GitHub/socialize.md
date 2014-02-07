@@ -9,7 +9,7 @@ Traducción de [Be Social][social_EN]. `2014.02.06`.
   - [Seguir a un Amigo](#seguir-a-un-amigo)
   - [Observar un Proyecto](#observar-un-proyecto)
   - [Más Cosas Que Puedes Hacer](#más-cosas-que-puedes-hacer)
-  - [¡Hora de celebrar!](#¡hora-de-celebrar!)
+  - [¡Hora de celebrar!](#hora-de-celebrar)
 
 
 ## Introducción ##

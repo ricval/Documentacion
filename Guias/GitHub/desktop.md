@@ -6,11 +6,11 @@ Traducción de [Getting your project on GitHub][desktop_EN]. `2014.02.06`.
 [desktop_EN]: http://guides.github.com/overviews/desktop/
 
   - [Introducción](#introducción)
-  - [GitHub Desktop](#gitHub-desktop)
+  - [GitHub Desktop](#github-desktop)
   - [Configura tu proyecto en GitHub Desktop](#configura-tu-proyecto-en-github-desktop)
-  - [Envía tu código a GitHub.com](#envía-tu-código-a-github.com)
-  - [Tomando código desde GitHub.com](#tomando-código-desde-github.com)
-  - [¡Hora de celebrar!](#¡hora-de-celebrar!)
+  - [Envía tu código a GitHub.com](#envía-tu-código-a-githubcom)
+  - [Tomando código desde GitHub.com](#tomando-código-desde-githubcom)
+  - [¡Hora de celebrar!](#hora-de-celebrar)
 
 
 ## Introducción ##
@@ -58,7 +58,7 @@ _Nota: Este ejemplo muestra la aplicación para Mac, pero es lo mismo para la ap
 
 ![GitHub Desktop Mac](http://guides.github.com/overviews/desktop/mac-dragndrop.jpg)
 
-Si estas arrastrando un repositorio Git existente, puedes saltarte este paso e ir a [enviar tu código a GitHub.com](#envía-tu-código-a-github.com).
+Si estas arrastrando un repositorio Git existente, puedes saltarte este paso e ir a [enviar tu código a GitHub.com](#envía-tu-código-a-githubcom).
 
 Si el directorio aún no es un repositorio Git, GitHub Desktop te preguntará si quieres convertirlo en un repositorio. Convertir tu proyecto en un repositorio Git no borra o arruina los archivos de tu directorio — éste simplemente crea algunos archivos ocultos que le permitirán a Git hacer su magia.
 

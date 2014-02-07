@@ -8,8 +8,8 @@ Traducción de [Forking Projects][forking_EN]. `2014.02.06`.
   - [Contribuyendo a un proyecto](#contribuyendo-a-un-proyecto)
   - [Haciendo un Fork del repositorio](#haciendo-un-fork-del-repositorio)
   - [Clona tu Fork](#clona-tu-fork)
-  - [Haciendo un Pull Request](#haciendo-un-Pull-Request)
-  - [Huzzah!](#huzzah!)
+  - [Haciendo un Pull Request](#haciendo-un-pull-request)
+  - [¡Fuuaa!](#fuuaa)
 
 
 ## Contribuyendo a un proyecto ##
@@ -75,6 +75,6 @@ Cuando hayas terminado de escribir todo tu argumento cordialmente escrito, da cl
 Tú _Pull Request_ está ahora en área de discusión. En este caso, el _Octocat_ esta muy ocupado, y probablemente no _merge_ tus cambios. Para otros proyectos, no te sientas ofendido si el dueño del proyecto rechaza tu _Pull Request_, o te pide más información de por qué hiciste tales cambios. Puede incluso que le dueño del proyecto decida no _merge_ tu _pull request_, y eso es totalmente válido. Tu copia seguirá existiendo en Internet. Y quien sabe – tal ves alguien que no conozcas encuentre tus cambios mucho más valiosos que el proyecto original.
 
 
-## Huzzah! ##
+## ¡Fuuaa! ##
 
 Haz hecho un _fork_ exitoso y haz contribuido de vuelta a un repositorio. Sigue adelante, y contribuye algo más.
