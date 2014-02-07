@@ -1,7 +1,7 @@
 Guías GitHub en Español
 =======================
 
-Traducciones de las [Guías GitHub][Guias_GitHub_EN] del día `2014.02.06`.
+Traducciones de las [Guías GitHub][Guias_GitHub_EN] el día `2014.02.06`.
 
  [Guias_GitHub_EN]: http://guides.github.com/
 
@@ -28,6 +28,8 @@ Publicar tu código no tiene que ser un dolor de cabeza. Esta guía te llevará 
 En GitHub hay mucha gente y muchos proyectos para explorar. Mantenerse al día con el trabajo que se está terminado con ellos y mostrar tu interés es fácil.
 
 > Lectura de 15 minutos
+
+[Leer Guía](socialize.md)
 
 
 ## Maestría en _Issues_ ##
