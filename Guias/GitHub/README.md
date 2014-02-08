@@ -45,9 +45,12 @@ La mayoría del texto en GitHub es procesado a través de un lenguaje de marcado
 
 > Lectura de 3 minutos
 
+[Leer Guía](mastering-markdown.md)
 
 ## Entendiendo la forma de trabajo de GitHub ##
 
 La forma de trabajo de GitHub es ligera, su forma de trabajo basado-en-ramas soporta equipos y proyectos donde las asignaciones se realizan regularmente. Esta guía explica como funciona la forma de trabajo de GitHub.
 
 > Lectura de 5 minutos
+
+[Leer Guía](flow.md)
