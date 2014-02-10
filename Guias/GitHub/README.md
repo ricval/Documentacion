@@ -38,6 +38,7 @@ GitHub es genial para manejar toda la información _acerca_ de código. Ésta gu
 
 > Lectura de 10 minutos
 
+[Leer Guía](issues.md)
 
 ## Maestría en _Markdown_ ##
 

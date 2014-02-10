@@ -7,8 +7,8 @@ Traducción de [Mastering Issues][issues_EN]. `2014.02.07`.
   - [Introducción](#introducción)
   - [Etapas, Etiquetas e Asignaciones](#crear-una-rama)
   - [Notificaciones, @menciones, y referencias](#agregar-commits)
-  - [Búsqueda](#abrir-un-pull-request)
-  - [Resumenes y Reportes](#discutir-y-revisar-tu-código)
+  - [Búsqueda](#búsqueda)
+  - [Resúmenes y Reportes](#resúmenes-y-reportes)
   - [Otros usuarios para Issues](#fusionar-e-implementar)
 
 
@@ -101,4 +101,99 @@ GitHub también sincroniza el estado de leído/no-leído de las notificaciones v
 
 ### @menciones
 
+Las @menciones son la forma de referirse a otros usuarios en GitHub dentro de los _issues_ de GitHub. Dentro de la descripción o en cualquier comentario de un _issue_, incluye el @nombre-de-usuario de otro usuario de GitHub para enviarle una notificación. Esto funciona muy similar a como lo hace Twitter con sus @menciones.
 
+Nos gusta utilizar la sintaxis `\cc` (una abreviación de copia al carbón) para incluir personas en un _issue_:
+
+> Parece que el nuevo _widget_ no funciona en Safari. Cuando lo probé y cree el _widget_, Safari fallo. Este funciona en la versión 10.8, pero no en la versión 10.9. ¿Podría ser una _bug_ del navegador?
+>
+> /cc @kneath @jresig
+
+Es una forma genial si sabes a que usuarios deseas incluir, pero muchas veces estamos trabajando con varios equipos y realmente no sabemos quien está disponible para ayudarnos. Las @menciones también funcionan para Equipos dentro de una organización en GitHub. Si creas un Equipo llamado _browser-bugs_ dentro de la organización @acmeinc, puedes referirte a ese equipo con la @mención:
+
+> /cc @acmeinc/browser-bugs
+
+Esto enviará una notificación a cada miembro del equipo _browser-bugs_.
+
+### Referencias
+
+Muchas veces los _issues_ dependen de otros _issues_, o al menos se relacionan entre sí y quieres que estén conectados. Puedes referirte a un _issue_ escribiendo un _hashtag_ seguido del número del _issue_.
+
+> Hey @kneath, Creo que el problema comenzó en #42
+
+Cuando haces esto, nosotros creamos un evento dentro del _issue_ #42 que se ve algo así:
+
+![reference](http://guides.github.com/overviews/issues/reference.png)
+
+¿Un _issue_ en otro repositorio? Solo incluye el repositorio antes del nombre, así: `kneath/proyecto-de-ejemplo#42`.
+
+Una de las cosas más interesantes de utilizar _Issues_ en GitHub es la referencia a _issues_ directamente desde los _commits_. Incluye un número de _issue_ dentro de un mensaje de un _commit_.
+
+![commit](http://guides.github.com/overviews/issues/commit.png)
+
+Anteponiendo en tus _commits_ la palabra "Fixes", "Fixed", "Fix", "Closes", "Closed" o "Close" cuando el _commit_ se _merge_ (funcione) con el _master_, automáticamente ese _issue_ se cerrará.
+
+Las referencias hacen posible conectar el trabajo que se está haciendo con el _bug_ que se esta tratando, y son una forma genial de añadir visibilidad dentro del historial de tu proyecto.
+
+
+
+## Búsqueda 
+
+Arriba de cada página se encuentra el campo de búsqueda que te permite hacer búsquedas entre los _issues_.
+
+![search](http://guides.github.com/overviews/issues/search.png)
+
+  - [Todos los _issues_ mensionados en la barra lateral][all_issues]
+  - [...que estén abiertos][issues_open] (da un vistazo a los links de la barra lateral a mano izquierda para filtrar los abiertos o cerrados)
+  - [Asignados a @mdo][issues_mdo]
+  - [O buscar entre todos los _issues_ de GitHub dando clic en el link de la barra lateral][issues_GitHub]
+
+Vista la página de [búsqueda avanzada][busqueda-avanzada] para aprender otras formas de buscar entre los _issues_: utilizando fechas de creación o actualización, etiquetas, autores, numero de comentarios, por dueño de repositorios, y más.
+
+[all_issues]: https://github.com/twbs/bootstrap/search?q=sidebar&type=Issues
+[issues_open]: https://github.com/twbs/bootstrap/search?q=sidebar&state=open&type=Issues
+[issues_mdo]: https://github.com/twbs/bootstrap/search?q=assignee%3Amdo&ref=cmdform&type=Issues
+[issues_GitHub]: https://github.com/search?q=sidebar&ref=reposearch&state=open&type=Issues
+[busqueda-avanzada]: https://github.com/search/advanced?q=sidebar&ref=reposearch&state=open&type=Issues
+
+
+
+## Resúmenes y Reportes
+
+Fuera de las sección de _Issues_, hay otras dos páginas que te ayudarán a resumir que pasa con los _issues_ a través de un repositorio y a través de todos tus repositorios.
+
+### El _Dashboard_ de _Issues_
+
+Si estás buscando un listado de todos tus _issues_ a través de muchos proyectos, el [Dashboard de Issues][dashborar_issues_link] puede ser una gran herramienta. El _dashboard_ funciona muy similar a la sección de _issues_, pero agrupa los _issues_ de forma diferente:
+
+  - Todos los _issues_ en repositorios que eres dueño o en los que colaboras.
+  - _Issues_ asignados a ti.
+  - _Issues_ que tu has creado.
+
+Si utilizas organizaciones, cada organización tendrá su propio _dashboar de Issues_ que separa cada _Issue_ dentro de la organización.
+
+[dashborar_issues_link]: https://github.com/dashboard/issues
+
+### Pulso (_Pulse_)
+
+Dentro de cada repositorio está una sección llamada **Pulse** (Pulso) **—** El Pulso es un _snapshot_ de todo lo que paso en el repositorio hace una semana ( día, o 3 meses, etc).
+
+![Pulso](http://guides.github.com/overviews/issues/pulse.png)
+
+Es una forma genial de ponerse al día con los repositorios para cuando has esta fuera y no quieres recibir notificaciones regularmente como cuando estas observando un repositorio.
+
+
+
+## Otros Usos para los _Issues_
+
+Los _Issues_ son geniales para rastrear todo tipo de cosas — y GitHub es un lugar genial para compartir de manera fácil y de colaborar con tus _issues_. Aquí hay unos de nuestros favoritos:
+
+  - [Rastrear _bugs_ desde tu casa](https://github.com/frabcus/house/issues?labels=building&state=open) incluyendo algunas gemas como [la puerta está colgada incorrectamente](https://github.com/frabcus/house/issues/58)
+  - [Rastrear _bugs_ para proyectos _open source_](https://github.com/joyent/node/issues)
+  - [Pedir recetas](https://github.com/newmerator/recipes/issues) (o talvés tengas una buena [receta de pizza sin gluten](https://github.com/newmerator/recipes/issues/3))
+
+
+
+## Fin
+
+**Ahora felicítate a ti mismo —** eso fue mucho que leer. La administración de _Issues_ es una de las herramientas más poderosas que está a disposición de cualquier desarrollador. Supongo que todo lo que queda es arreglar tus bugs.
