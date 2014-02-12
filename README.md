@@ -6,7 +6,7 @@ en español, con el propósito de que sea más ameno y accesible a más personas
 
 __Lenguajes__:
   - [Markdown](Markdown)
-    - [Markdown GitHub](Markdown)
+    - [Markdown GitHub](Markdown/GitHub_Flavores_Markdown.md)
 
 __Guías__:
   - [GitHub](Guias/GitHub)
