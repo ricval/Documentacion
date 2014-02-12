@@ -5,7 +5,7 @@ Traducción de [Mastering Issues][issues_EN]. `2014.02.07`.
 [issues_EN]: http://guides.github.com/overviews/issues/
 
   - [Introducción](#introducción)
-  - [Etapas, Etiquetas e Asignaciones](#etapas,-etiquetas-e-asignaciones)
+  - [Etapas, Etiquetas e Asignaciones](#etapas-etiquetas-e-asignaciones)
   - [Notificaciones, @menciones, y referencias](#notificaciones-menciones-y-referencias)
   - [Búsqueda](#búsqueda)
   - [Resúmenes y Reportes](#resúmenes-y-reportes)
