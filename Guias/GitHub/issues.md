@@ -5,16 +5,16 @@ Traducción de [Mastering Issues][issues_EN]. `2014.02.07`.
 [issues_EN]: http://guides.github.com/overviews/issues/
 
   - [Introducción](#introducción)
-  - [Etapas, Etiquetas e Asignaciones](#crear-una-rama)
-  - [Notificaciones, @menciones, y referencias](#agregar-commits)
+  - [Etapas, Etiquetas e Asignaciones](#etapas,-etiquetas-e-asignaciones)
+  - [Notificaciones, @menciones, y referencias](#notificaciones-menciones-y-referencias)
   - [Búsqueda](#búsqueda)
   - [Resúmenes y Reportes](#resúmenes-y-reportes)
-  - [Otros usuarios para Issues](#fusionar-e-implementar)
+  - [Otros usos para los Issues](#otros-usos-para-los-issues)
 
 
 ## Introducción ##
 
-Los _Issues_ son una forma genial de administrar tus tareas, mejoras y _bugs_ de tus proyectos. Son como tipo o como un email — excepto que pueden ser compartidos y debatidos con el resto de tu equipo. La mayoría de los proyectos de software tienen un administrador de _bugs_ o algo parecido. El administrador de GitHub es llamado **Issues**, y tiene su propia sección en cada repositorio.
+Los _Issues_ son una forma genial de administrar tus tareas, mejoras y _bugs_ de tus proyectos. Son como un tipo de email — excepto que pueden ser compartidos y debatidos con el resto de tu equipo. La mayoría de los proyectos de software tienen un software administrador de _bugs_ o algo parecido. El administrador de GitHub es llamado **Issues**, y tiene su propia sección en cada repositorio.
 
 ![sección de Issues](http://guides.github.com/overviews/issues/navigation-highlight.png)
 
@@ -29,10 +29,10 @@ El administrador de _issue_ de GitHub es especial debido a que se concentra en l
 ![issue de ejemplo](http://guides.github.com/overviews/issues/example-issue.png)
 
  - El **título y la descripción** describen de que se trata el _issue_.
- - Las **etiquetas** coloreadamente-resaltadas ayudan a organizar y filtrar tus _issues_ (como las etiquetas en Gmail).
- - Las **etapas** actúan como contenedores de _issues_. Esto es útil para asociar ciertos _issues_ con características especificas o fases del proyecto (ejem. _Sprint Semanal 9/5-9/16_ o _Envío 1.0_)
- - Un **asignado** es responsable de trabajar en el _issue_ en un momento dado.
- - Los **comentarios** permiten a cualquiera con acceso al repositorio proveer de una opinión.
+ - Las **etiquetas (_Labels_)** coloreadamente-resaltadas ayudan a organizar y filtrar tus _issues_ (como las etiquetas en Gmail).
+ - Las **etapas (_Milestone_)** actúan como contenedores de _issues_. Esto es útil para asociar ciertos _issues_ con características especificas o fases del proyecto (ejem. _Sprint Semanal 9/5-9/16_ o _Envío 1.0_)
+ - Un **asignado (_Assignee_)** es responsable de trabajar en el _issue_ en un momento dado.
+ - Los **comentarios** permiten a cualquiera con acceso al repositorio dar su opinión.
 
 
 
@@ -44,7 +44,7 @@ Puedes cambiar o agrear una etapa (_milestone_), una asignación (_assignee_), y
 
 ![labels](http://guides.github.com/overviews/issues/labels.png)
 
-Si no ves los botones de edición, es porque no tienes permiso para para modificar ese _issue_. Puedes pedirle al dueño del repositorio que te agregue como colaborador para tener acceso.
+Si no ves los botones de edición, es porque no tienes permiso para modificar ese _issue_. Puedes pedirle al dueño del repositorio que te agregue como colaborador para tener acceso.
 
 ### Etapas (_Milestones_)
 
@@ -53,18 +53,18 @@ Si no ves los botones de edición, es porque no tienes permiso para para modific
 Las Etapas son grupos de _issues_ que corresponden a un proyecto, una característica, o un periodo de tiempo. Las personas utilizan esto de muchas maneras diferentes en el desarrollo de software. Algunos ejemplos:
 
   - **Lanzamiento Beta —** Archivos con _bugs_ que necesitas arreglar antes de poder lanzar la beta de tu proyecto. Es una idea genial para asegurarte que no estas olvidando nada.
-  - **Sprint de Octubre —** Lista de _issues_ en los que quieres trabar en Octubre. Una forma genial de enfocar tu esfuerzo cuando hay mucho que hacer.
+  - **Sprint de Octubre —** Lista de _issues_ en los que quieres trabajar en Octubre. Una forma genial de enfocar tu esfuerzo cuando hay mucho que hacer.
   - **Re-diseño —** Lista de _issues_ relacionados al re-diseño de tu proyecto. Una forma genial de coleccionar ideas en las que podrías trabajar.
 
 ### Etiquetas (_Labels_)
 
-Las etiquetas con una forma de organizar deferentes tipos de _issues_. Los _issues_ pueden tener tantas etiquetas como quieras, y puedes filtrarlas por una o varias etiquetas.
+Las etiquetas son una forma de organizar diferentes tipos de _issues_. Los _issues_ pueden tener tantas etiquetas como quieras, y puedes filtrarlas por una o por varias.
 
 ![listado de etiquetas](http://guides.github.com/overviews/issues/labels-listing.png)
 
 ### Asignaciones (_Assignees_)
 
-Cada _issue_ tiene un asignado — una persona que es el responsable para llevar el _issue_ en buena dirección. Las asignaciones son seleccionadas de la misma manera que las etapas, a través de la barra gris en la parte superior de un _issue_.
+Cada _issue_ tiene un asignado — una persona que es la responsable para llevar el _issue_ en buena dirección. Las asignaciones son seleccionadas de la misma manera que las etapas, a través de la barra gris en la parte superior de un _issue_.
 
 
 
@@ -82,7 +82,7 @@ Si quieres conocer más, puedes dar un vistazo a la Guía de [Maestría en _Mark
 
 Las [notificaciones][] son la forma de mantenerte al día con tus _Issues_. Puedes utilizarlas para saber que hay de nuevo en _issues_ o en repositorios, o simplemente para saber cuando alguien necesita de tu ayuda.
 
-Hay dos formas de recibir las notificaciones: vía email, y vía web. Puedes configurar como deseas recibir las notificaciones en [tus opciones][tus-opciones]. Si tu plan es recibir un motón de notificación, te recomendamos que las recibas vía web y email, para **participar** y notificaciones web para **Observar**.
+Hay dos formas de recibir las notificaciones: vía email, y vía web. Puedes configurar cómo deseas recibir las notificaciones en [tus opciones][tus-opciones]. Si tu plan es recibir un motón de notificación, te recomendamos que las recibas vía web y email para **participar**, y notificaciones web para **Observar**.
 
 ![notificaciones img](http://guides.github.com/overviews/issues/notifications.png)
 
@@ -176,7 +176,7 @@ Si utilizas organizaciones, cada organización tendrá su propio _dashboar de Is
 
 ### Pulso (_Pulse_)
 
-Dentro de cada repositorio está una sección llamada **Pulse** (Pulso) **—** El Pulso es un _snapshot_ de todo lo que paso en el repositorio hace una semana ( día, o 3 meses, etc).
+Dentro de cada repositorio está una sección llamada **Pulse** (Pulso) **—** El Pulso es un _snapshot_ de todo lo que paso en el repositorio hace una semana ( día, ó 3 meses, etc).
 
 ![Pulso](http://guides.github.com/overviews/issues/pulse.png)
 
